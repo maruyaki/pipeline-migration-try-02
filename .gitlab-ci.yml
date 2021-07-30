@@ -2,5 +2,5 @@ open-pullrequest:
   only:
     - merge_request
   script:
-    - 'while [`curl -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${USER_TOKEN}" "https://api.github.com/repos/maruyaki/pipeline-migration-try-02/pulls" -d "{\"head\": \"${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}\", \"base\": \"${CI_MERGE_REQUEST_TARGET_BRANCH_NAME}\", \"title\": \"${CI_MERGE_REQUEST_TITLE}\"}" | grep "Fail"`]; do; done'
+    - 'while ["`curl -X POST -H \"Accept: application/vnd.github.v3+json\" -H \"Authorization: token ${USER_TOKEN}\" \"https://api.github.com/repos/maruyaki/pipeline-migration-try-02/pulls\" -d \"{\"head\": \"${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}\", \"base\": \"${CI_MERGE_REQUEST_TARGET_BRANCH_NAME}\", \"title\": \"${CI_MERGE_REQUEST_TITLE}\"}\" | grep \"Fail\"`""]; do ; done'
 
