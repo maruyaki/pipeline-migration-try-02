@@ -14,7 +14,7 @@ open-pullrequest:
     -   echo ${RESPONSE} > log.txt
     -   export RESPONSE_FILTERED=`echo ${RESPONCE} | grep "Fail"`
     -   echo ${RESPONSE_FILTERED}
-    -   'if [ "`echo ${RESPONSE_FILTERED}`" = "" ]; then export RESPONSE_CHK="True"; fi'
+    -   'if [ "${RESPONSE_FILTERED}" = "" ]; then export RESPONSE_CHK="True"; fi'
     - done
   artifacts:
     paths:
