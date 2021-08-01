@@ -15,7 +15,6 @@ open-pullrequest:
     -   export RESPONSE_FILTERED=`echo ${RESPONCE} | grep "Fail"`
     -   echo ${RESPONSE_FILTERED}
     -   'if [ "`echo ${RESPONSE_FILTERED}`" = "" ]; then export RESPONSE_CHK="True"; fi'
-    -   echo ${RESPONSE} | grep "Fail"
     - done
   artifacts:
     paths:
