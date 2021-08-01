@@ -5,6 +5,7 @@ default:
 open-pullrequest:
   only:
     - merge_request
+  allow_failure: true
   script:
     - export RESPONSE_CHK="False"
     - 'while [ "`echo ${RESPONSE_CHK}`" = "False" ]'
