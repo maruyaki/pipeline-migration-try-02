@@ -7,7 +7,7 @@ open-pullrequest:
     - merge_requests
   allow_failure: true
   script:
-    - mr_migration.sh ${USER_TOKEN} ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME} ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME} ${CI_MERGE_REQUEST_TITLE}
+    - ./mr_migration.sh ${USER_TOKEN} ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME} ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME} ${CI_MERGE_REQUEST_TITLE}
   artifacts:
     paths:
       - log.txt
