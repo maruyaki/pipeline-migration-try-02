@@ -1,5 +1,5 @@
 name: Pipeline migration try
-on: pull_request
+on: push
 
 jobs:
   test:
