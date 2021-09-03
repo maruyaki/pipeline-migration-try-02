@@ -1,0 +1,8 @@
+build-job: 
+  stage: build
+  tags:
+    - test-runner-01
+  only:
+    - merge_requests
+  script:
+    - echo "StartMR"
