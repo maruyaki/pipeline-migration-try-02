@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Target3 Recieved!"
+      - run: echo "Source4 Recieved!"
