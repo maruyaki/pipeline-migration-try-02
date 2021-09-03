@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Target Recieved!"
+      - run: echo "Target2 Recieved!"
