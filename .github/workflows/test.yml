@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Recieved!"
+      - run: echo "Source Recieved!"
